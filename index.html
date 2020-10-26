@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid-19 Sprint Project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/plug-ins/1.10.20/features/scrollResize/dataTables.scrollResize.min.js"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand">WORLD COVID-19 STATISTICS</a>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </nav>
+
+    <div>
+      <h1 class="first-h1">World Covid-19 Statistical Update</h1>
+    </div>
+
+    <div class="container-first">
+      <div class="row">
+        <div class="col-md-3 table-one">
+          <h2 class="text-center">Gobal Statistics</h2>
+          <table class="table" id="total-casses"></table>
+        </div>
+
+        <div class="col-md-3 table-two">
+          <h2 class="text-center">Statistics in Nigeria</h2>
+          <table class="table" id="total-tested"></table>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center mt-4">Cummulative Cornfirmed Cases</h2>
+          <table
+            class="table table-striped display"
+            id="display"
+            style="width: 100px; height: 20px"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Country</th>
+                <th scope="col">Country Code</th>
+                <th scope="col">Slug</th>
+                <th scope="col">New Confirmed</th>
+                <th scope="col">TotalConfirmed</th>
+                <th scope="col">New Deaths</th>
+                <th scope="col">Total Deaths</th>
+                <th scope="col">New Recovered</th>
+                <th scope="col">Total Recovered</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody id="result"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- <table class="table table-hover table-dark mytable">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th id="Thead1" scope="col">First</th>
+          <th id="Thead2" scope="col">Last</th>
+          <th id="Thead3" scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td colspan="2"></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.20/features/scrollResize/dataTables.scrollResize.min.js"></script>
+  </body>
+</html>
